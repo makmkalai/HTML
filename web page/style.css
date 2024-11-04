@@ -1,0 +1,1174 @@
+/*
+    ________________________________________
+
+            Universal Selector
+    ________________________________________
+
+ */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #2E4455;
+}
+
+/*____________________
+
+    Header Section
+____________________ */
+header {
+    background-color: rgb(245, 236, 236);
+    /* position: sticky;
+    top: 0;  */
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.first_nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #023b6d;
+}
+
+.nav_icon_start ul {
+    display: flex;
+    margin: 5px 0;
+}
+
+.nav_icon_start ul li {
+    list-style-type: none;
+}
+
+.nav_icon_start ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.nav_icon_start ul li a span {
+    color: #00B1E9;
+    margin-right: 10px;
+}
+
+.nav_icon_start ul li i {
+    margin-right: 5px;
+    color: white;
+}
+
+.nav_icon_center ul {
+    display: flex;
+    margin: 5px 0;
+}
+
+.nav_icon_center ul li {
+    list-style-type: none;
+}
+
+.nav_icon_center ul li a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.nav_icon_center ul li a i {
+    font-size: 15px;
+    color: white;
+}
+
+.nav_icon_end ul {
+    display: flex;
+}
+
+.nav_icon_end ul li {
+    list-style-type: none;
+}
+
+.nav_icon_end ul li a {
+    color: white;
+    padding: 0 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav_icon_end ul li a i {
+    color: white;
+    padding: 0 5px;
+    font-size: 15px;
+}
+
+.nac_end_i {
+    margin: 5px 0;
+}
+
+.nav_icon_end ul .dwn {
+    background-color: #00B1E9;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.sec_nav {
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sec_header_link ul {
+    display: flex;
+}
+
+.sec_header_link ul li {
+    list-style-type: none;
+    font-size: 15px;
+}
+
+.sec_header_link ul li a {
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.sec_header_link ul li a:hover {
+    text-decoration: underline;
+}
+
+.sec_header_link ul li i {
+    margin-right: 10px;
+    color: #428BCA;
+}
+
+.sec_header_social a {
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+.sec_header_social i:hover {
+    color: #428BCA;
+}
+
+.third_nav {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.header_anger a h2 {
+    font-size: 25px;
+}
+
+.third_nav a {
+    text-decoration: none;
+    color: #2E4455;
+}
+
+.third_nav a:hover {
+    color: blue;
+}
+
+.header_list {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.header_list a {
+    font-size: 16px;
+}
+
+.header_list li {
+    padding: 10px;
+    list-style-type: none;
+}
+
+.drp i {
+    position: relative;
+    font-size: 15px;
+    top: 3px;
+}
+
+.sub_drop {
+    display: none;
+}
+
+.sub_drop i {
+    font-size: 15px;
+}
+
+.header_list li:hover .sub_drop {
+    position: absolute;
+    display: block;
+    padding: 20px 20px;
+    background-color: rgb(245, 236, 236);
+}
+
+.sub_drop li {
+    width: 150px;
+    padding: 10px;
+}
+
+.bi-chevron-right {
+    float: right;
+}
+
+.last_sub_drop {
+    display: none;
+}
+
+.sub_drop ul li:hover .last_sub_drop {
+    position: absolute;
+    display: block;
+    padding: 5px 10px;
+    right: 180px;
+    background-color: rgb(245, 236, 236);
+}
+
+.bi-chevron-down {
+    float: right;
+    color: blue;
+    margin-left: 10px;
+    padding-top: 3px;
+}
+
+/*____________________
+
+    Banner Section
+____________________ */
+.banner_sec {
+    background-image: url(images/hero-carousel-1.jpg);
+    height: 400px;
+    background-size: cover;
+    display: flex;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.con_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20%;
+}
+
+.con_title h1 {
+    font-size: 40px;
+    margin: 20px;
+}
+
+.con_title p {
+    font-size: 18px;
+    margin: 20px;
+}
+
+.con_btn {
+    margin: 20px;
+    position: relative;
+}
+
+.con_btn a {
+    text-decoration: none;
+    background-color: #428BCA;
+    color: white;
+    padding: 8px 25px;
+    border-radius: 30px;
+}
+
+.con_btn a::after {
+    content: '';
+    height: 2px;
+    width: 50px;
+    background-color: #2E4455;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+.r_icon a i,
+.l_icon a i {
+    color: rgb(16, 16, 192);
+    font-size: 25px;
+    margin: 0 30px;
+}
+
+/*____________________
+
+    About Section
+____________________ */
+.about_title {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.about_title h1 {
+    font-weight: 300;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.about_title h3 {
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.about_content {
+    display: flex;
+    margin: 0 80px;
+    gap: 10%;
+}
+
+.abt_row {
+    width: 45%;
+}
+
+.abt_row h1 {
+    font-weight: 800;
+    color: #2E4455;
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+
+.abt_row img {
+    width: 100%;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+
+.abt_row p {
+    font-weight: 100;
+    font-size: 18px;
+    word-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+.abt_col {
+    width: 45%;
+}
+
+.abt_col p {
+    font-weight: 200;
+    font-size: 18px;
+    word-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+.abt_col ul li {
+    list-style-type: none;
+    margin-bottom: 20px;
+    font-weight: 100;
+    font-size: 17px;
+    word-spacing: 5px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.abt_col ul li i {
+    margin-right: 20px;
+    background-color: #428BCA;
+    color: white;
+    padding: 3px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.abt_img {
+    background-image: url(images/banner\ img\ 1.jpg);
+    width: 100%;
+    height: 50%;
+    background-size: cover;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.abt_img i {
+    font-size: 30px;
+    color: white;
+    background-color: #428BCA;
+    padding: 20px;
+    border-radius: 50%;
+    transition: all Is ease;
+}
+
+.abt_img i:hover {
+    transform: scale(1.5, 1.5);
+}
+
+/*____________________
+
+    Card Section
+____________________ */
+.card_sec {
+    width: 90%;
+    margin: 10% auto;
+}
+
+.card_row {
+    display: flex;
+}
+
+.card_col {
+    width: 33.3%;
+    margin: 0 20px;
+    padding: 30px 20px;
+}
+
+.card_item h1 {
+    margin-bottom: 15px;
+    color: #428BCA;
+    font-size: 35px;
+}
+
+.card_item h2 {
+    margin-bottom: 15px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.card_item p {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.card_col:hover {
+    background-color: #428BCA;
+    transition: all ease-in-out 0.9s;
+}
+
+.card_col:hover h1 {
+    color: white;
+    transition: all ease-in-out 0.9s;
+}
+
+.card_col:hover h2 {
+    color: white;
+    transition: all ease-in-out 0.9s;
+}
+
+.card_col:hover p {
+    color: white;
+    transition: all ease-in-out 0.9s;
+}
+
+/*____________________
+
+    Number Section
+____________________ */
+.num_sec {
+    width: 90%;
+    margin: 10% auto;
+}
+
+.num_row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.num_col {
+    text-align: center;
+    width: 20%;
+    padding: 20px;
+    background-color: rgb(241, 242, 243);
+}
+
+.num_item {
+    position: relative;
+}
+
+.num_icon {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 95px;
+    text-align: center;
+}
+
+.num_icon i {
+    font-size: 20px;
+    color: #428BCA;
+    background-color: rgb(241, 242, 243);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.num_item h2 {
+    font-size: 35px;
+    margin: 10px 0;
+}
+
+.num_item h4 {
+    font-weight: 300;
+    font-size: 18px;
+}
+
+/*____________________
+
+    Services Section
+____________________ */
+.services_sec {
+    width: 90%;
+    margin: 10% auto;
+}
+
+.ser_title {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.ser_title h1 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.ser_title p {
+    margin-bottom: 18px;
+}
+
+.ser_row {
+    display: flex;
+    margin: 90px 0;
+}
+
+.ser_col {
+    width: 33.3;
+    margin: 0 15px;
+    text-align: center;
+    position: relative;
+}
+
+.ser_card h2 {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.ser_card p {
+    font-size: 18px;
+    font-weight: 100;
+    margin-top: 40px;
+}
+
+.ser_card i {
+    font-size: 25px;
+    color: #428BCA;
+}
+
+.ser_col:hover .ser_card h2 {
+    color: #428BCA;
+}
+
+.ser_card h2::after {
+    content: '';
+    height: 2px;
+    width: 60px;
+    position: absolute;
+    background-color: #428BCA;
+    top: 100px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+/*____________________
+
+    Portfolio Section
+____________________ */
+.port_section {
+    padding: 70px 0;
+}
+
+.port_container {
+    width: 90%;
+    margin: auto;
+}
+
+.port_title {
+    text-align: center;
+}
+
+.port_title h1 {
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.port_title p {
+    font-size: 18px;
+}
+
+.port_apps {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.port_apps .all a {
+    margin: 0 10px;
+    text-decoration: none;
+    background-color: #428BCA;
+    font-size: 15px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: white;
+}
+
+.port_apps .app a {
+    font-size: 15px;
+    margin: 0 10px;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.port_apps .app a:hover {
+    background-color: #428BCA;
+    color: white;
+    transition: ease-in-out 0.8s;
+}
+
+.port_apps .card a {
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.port_apps .card a:hover {
+    background-color: #428BCA;
+    color: white;
+    transition: ease-in-out 0.8s;
+}
+
+.port_apps .web a {
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.port_apps .web a:hover {
+    background-color: #428BCA;
+    color: white;
+    transition: ease-in-out 0.8s;
+}
+
+.port_row {
+    display: flex;
+    gap: 2pxs;
+}
+
+.port_col {
+    width: 33.3%;
+    gap: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.port_card {
+    position: relative;
+}
+
+.port_card img {
+    vertical-align: middle;
+}
+
+.port_info {
+    position: absolute;
+    opacity: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(153, 148, 148);
+}
+
+.port_info_title {
+    margin: 5px 30px;
+}
+
+.port_info_title h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.port_info_title p {
+    font-size: 17px;
+}
+
+.port_info_icn {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.port_info_icn a i {
+    margin: 0 6px;
+    font-size: 20px;
+    position: relative;
+}
+
+.deta {
+    display: none;
+}
+
+.info_ico_deta i:hover .deta {
+    position: absolute;
+    display: block;
+    font-size: 13px;
+    top: 25px;
+    left: 15px;
+    border: 1px solid black;
+    padding: 3px 10px;
+    transition: ease-in-out 0.9s;
+}
+
+.port_info_icn a i:hover {
+    color: #428BCA;
+}
+
+.port_card:hover .port_info {
+    position: absolute;
+    opacity: 1;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 248, 248);
+    transition: ease-in-out 0.6s;
+}
+
+/*____________________
+
+    Team Section
+____________________ */
+.team_container {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.team_title {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.team_title h1 {
+    font-weight: 100;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.team_title p {
+    font-size: 20px;
+}
+
+.team_row {
+    display: flex;
+}
+
+.team_col {
+    width: 33.3%;
+    margin: 12px;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.team_in {
+    position: relative;
+}
+
+.team_social {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -50px;
+    text-align: center;
+}
+
+.team_social a i {
+    opacity: 0;
+    margin: 0 5px;
+    font-size: 10px;
+    padding: 10px 10px;
+    background-color: #428BCA;
+    color: white;
+    border-radius: 50%;
+}
+
+.team_info {
+    background-color: white;
+    margin: -10px 10px;
+    border-radius: 10px;
+    padding: 30px 0 30px;
+}
+
+.team_info h3 {
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.team_info p {
+    font-size: 17px;
+}
+
+.team_in:hover .team_social a i {
+    opacity: 1;
+    margin: 0 5px;
+    font-size: 15px;
+    padding: 8px;
+    background-color: #428BCA;
+    color: white;
+    border-radius: 50%;
+    transition: ease-in-out 0.6s;
+}
+
+/*____________________
+
+    Question Section
+____________________ */
+.qus_container {
+    width: 90%;
+    margin: 90px auto;
+}
+
+.qus_title {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.qus_title h1 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.qus_title h3 {
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.qus_content hr {
+    opacity: 0.4;
+}
+
+.qus_col {
+    display: flex;
+    gap: 20px;
+}
+
+.qus_row {
+    margin: 40px 0;
+}
+
+.qus_con {
+    display: flex;
+    width: 40%;
+    overflow: hidden;
+}
+
+.qus_p {
+    width: 60%;
+}
+
+.qus_con i {
+    font-size: 18px;
+    color: #428BCA;
+    margin-right: 8px;
+}
+
+.qus_con span {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.qus_col p {
+    font-size: 16px;
+}
+
+/*____________________
+
+    Contact Section
+____________________ */
+.conta_container {
+    margin: 50px 0;
+}
+
+.conta_title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.conta_title h1 {
+    margin-bottom: 20px;
+    font-size: 35px;
+    font-weight: 100;
+}
+
+.conta_title h3 {
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.conta_row {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    margin: 0 50px;
+}
+
+.conta_row p {
+    font-size: 15px;
+}
+
+.conta_col {
+    width: 50%;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 0 10px #b3aaaa;
+}
+
+.conta_col i {
+    border: 2px dotted #428BCA;
+    color: #428BCA;
+    padding: 13px;
+    border-radius: 50%;
+}
+
+.conta_col h3 {
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.conta_col1 {
+    width: 25%;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 0 10px #b3aaaa;
+}
+
+.conta_col1 i {
+    border: 2px dotted #428BCA;
+    color: #428BCA;
+    padding: 13px;
+    border-radius: 50%;
+}
+
+.conta_col1 h3 {
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.conta_col2 {
+    width: 25%;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 0 10px #b3aaaa;
+}
+
+.conta_col2 i {
+    border: 2px dotted #428BCA;
+    color: #428BCA;
+    padding: 13px;
+    border-radius: 50%;
+}
+
+.conta_col2 h3 {
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+/*____________________
+
+    Form Section
+____________________ */
+.form_container {
+    width: 90%;
+    margin: 20px 50px;
+}
+
+.form_col {
+    width: 100%;
+    display: flex;
+    gap: 2%
+}
+
+.form_col input,
+textarea {
+    width: 100%;
+    margin: 10px;
+    padding: 10px 20px;
+}
+
+.form_col textarea {
+    height: 150px;
+}
+
+.form_btn {
+    margin: 20px;
+    text-align: center;
+}
+
+.form_btn a {
+    text-decoration: none;
+    background-color: #428BCA;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 20px;
+}
+
+/*____________________
+
+    Footer Section
+____________________ */
+
+.ftr_container {
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 50px;
+    color: #818D8F;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.ftr_row a h3 {
+    margin-bottom: 35px;
+    color: #2E4455;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+.ftr_row a {
+    text-decoration: none;
+}
+
+.ftr_row p {
+    font-size: 14px;
+}
+
+.ftr_row div {
+    margin-bottom: 25px;
+}
+
+.ftr_row h5 {
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.ftr_row p span {
+    font-size: 15px;
+    font-weight: 900;
+    color: rgb(100, 87, 87);
+}
+
+.ftr_icon {
+    display: flex;
+    gap: 15px;
+    justify-content: space-around;
+}
+
+.ftr_icon a {
+    color: #2E4455;
+    border: 1px solid #2E4455;
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.ftr_icon i:hover {
+    color: #428BCA;
+    border-color: #428BCA;
+}
+
+.ftr_col {
+    display: flex;
+    justify-content: space-around;
+}
+
+.ftr_col a {
+    text-decoration: none;
+    color: #606468;
+    font-size: 15px;
+}
+
+.ftr_link {
+    margin: 0 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ftr_link h4,
+a {
+    padding-bottom: 14px;
+}
+
+.ftr_services {
+    margin: 0 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ftr_services h4,
+a {
+    padding-bottom: 15px;
+}
+
+.ftr_hic {
+    margin: 0 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ftr_hic h4,
+a {
+    padding-bottom: 15px;
+}
+
+.ftr_nobis {
+    display: flex;
+    flex-direction: column;
+}
+
+.ftr_nobis h4,
+a {
+    padding-bottom: 15px;
+}
+
+.ftr_col a:hover {
+    color: #428BCA;
+}
+
+.ftr_col h4 {
+    color: #2E4455;
+    font-size: 18px;
+}
+
+.ftr_abt {
+    text-align: center;
+    margin: 50px 0;
+    font-size: 15px;
+}
+
+.ftr_abt p {
+    margin-bottom: 10px;
+}
+
+.ftr_abt span {
+    color: #428BCA;
+}
+
+footer hr {
+    opacity: 0.4;
+}
